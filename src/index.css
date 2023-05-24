@@ -24,3 +24,18 @@
 @import url('./blocks/header/__nav/header__nav.css');
 @import url('./blocks/header/__nav-list/header__nav-list.css');
 @import url('./blocks/header/__theme-switch/header__theme-switch.css');
+
+/* блок shop */
+
+@import url('./blocks/shop/shop.css');
+@import url('./blocks/shop/__categories/shop__categories.css');
+@import url('./blocks/shop/__category/shop__category.css');
+@import url('./blocks/category/__header/category__header.css');
+@import url('./blocks/category/__container/category__container.css');
+@import url('./blocks/category/__item/category__item.css');
+@import url('./blocks/item/__bttm-panel/item__bttm-panel.css');
+@import url('./blocks/item/__button/item__button.css');
+@import url('./blocks/item/__date/item__date.css');
+@import url('./blocks/item/__descr/item__descr.css');
+@import url('./blocks/item/__image/item__image.css');
+@import url('./blocks/item/__name/item__name.css');

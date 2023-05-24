@@ -1,0 +1,10 @@
+.item__name {
+  font-family: 'Inter', 'Arial', sans-serif;
+  font-size: 15px;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 172px;
+  padding-bottom: 10px;
+}

@@ -1,0 +1,8 @@
+.shop__categories {
+  padding: 100px 20px;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
