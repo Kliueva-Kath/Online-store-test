@@ -39,3 +39,5 @@
 @import url('./blocks/item/__descr/item__descr.css');
 @import url('./blocks/item/__image/item__image.css');
 @import url('./blocks/item/__name/item__name.css');
+
+@import url('./blocks/scroll-top-btn/scroll-top-btn.css');
