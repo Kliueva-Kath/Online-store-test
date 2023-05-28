@@ -26,3 +26,7 @@
     padding: 25px 22px;
   }
 }
+
+.buy-form__container.dark-theme {
+  background-color: black;
+}

@@ -65,6 +65,7 @@ const header = document.querySelector('.header');
 const headerTexts = document.querySelectorAll('.header__nav-link');
 const body = document.querySelector('.body');
 const itemCard = document.querySelectorAll('.category__item');
+const formContainer = document.querySelector('.buy-form__container');
 
 themeSwitch.addEventListener('click', () => {
   header.classList.toggle('dark-theme');
@@ -75,4 +76,5 @@ themeSwitch.addEventListener('click', () => {
   itemCard.forEach((card) => {
     card.classList.toggle('dark-theme');
   });
+  formContainer.classList.toggle('dark-theme');
 });
