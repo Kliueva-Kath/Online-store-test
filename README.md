@@ -1,5 +1,7 @@
 # Онлайн-магазин
 
+**Проект можно посмотреть на** [Github Pages](https://kliueva-kath.github.io/Online-store-test/)
+
 ## Описание
 
 Тестовое задание для школы Frontend-разработки Digital Design.
