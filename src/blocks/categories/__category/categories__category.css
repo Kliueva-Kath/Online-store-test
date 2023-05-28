@@ -1,0 +1,9 @@
+.categories__category {
+  text-decoration: none;
+  font-family: 'Inter', 'Arial', sans-serif;
+  font-size: 17px;
+}
+
+.categories__category:hover {
+  opacity: 0.7;
+}
