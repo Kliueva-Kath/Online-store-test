@@ -22,3 +22,19 @@ function scrollToTop() {
 scrollButton.addEventListener('click', () => {
   scrollToTop();
 });
+
+/* открытие формы при клике на кнопку покупки */
+
+const buyButtons = document.querySelectorAll('.item__button');
+const buyForm = document.querySelector('.buy-form');
+const itemFormName = document.querySelector('.buy-form__item-name');
+
+buyButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    buyForm.classList.add('open');
+    const item = button.closest('.category__item');
+    const itemName = item.querySelector('.item__name').textContent;
+    itemFormName.textContent = itemName;
+    console.log(itemName);
+  });
+});
