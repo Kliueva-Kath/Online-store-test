@@ -9,3 +9,7 @@
   z-index: 5;
   margin: 0 auto;
 }
+
+.header.dark-theme {
+  background-color: black;
+}

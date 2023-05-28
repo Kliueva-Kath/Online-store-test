@@ -1,12 +1,39 @@
 .header__theme-switch {
   width: 20px;
   height: 20px;
-  background: transparent;
-  outline: none;
-  border: none;
+  position: relative;
+  appearance: none;
+  z-index: 99;
+}
+
+.header__theme-switch::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
   background-image: url('../../../images/day_icon.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
+  background-position: center;
+}
+
+.header__theme-switch:checked {
+  appearance: none;
+}
+
+.header__theme-switch:checked::after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url('../../../images/night_icon.svg');
+  background-size: cover;
+  background-position: center;
 }
 
 .header__theme-switch:hover {

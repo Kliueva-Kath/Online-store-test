@@ -57,3 +57,22 @@ exitFormButton.addEventListener('click', () => {
   popup.classList.remove('open');
   buyForm.reset();
 });
+
+/* Переключение темы */
+
+const themeSwitch = document.querySelector('.header__theme-switch');
+const header = document.querySelector('.header');
+const headerTexts = document.querySelectorAll('.header__nav-link');
+const body = document.querySelector('.body');
+const itemCard = document.querySelectorAll('.category__item');
+
+themeSwitch.addEventListener('click', () => {
+  header.classList.toggle('dark-theme');
+  headerTexts.forEach((text) => {
+    text.classList.toggle('dark-theme');
+  });
+  body.classList.toggle('dark-theme');
+  itemCard.forEach((card) => {
+    card.classList.toggle('dark-theme');
+  });
+});
