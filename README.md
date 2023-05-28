@@ -19,4 +19,4 @@
 1. [Путешествия по России](https://github.com/Kliueva-Kath/russian-travel)
 2. [Mesto](https://github.com/Kliueva-Kath/mesto)
 3. [Mesto на React](https://github.com/Kliueva-Kath/react-mesto-api-full)
-4. Movies Explorer: [frontend](https://github.com/Kliueva-Kath/movies-explorer-frontend) [backend](https://github.com/Kliueva-Kath/movies-explorer-api)
+4. Movies Explorer: [frontend](https://github.com/Kliueva-Kath/movies-explorer-frontend) | [backend](https://github.com/Kliueva-Kath/movies-explorer-api)
