@@ -78,3 +78,79 @@ themeSwitch.addEventListener('click', () => {
   });
   formContainer.classList.toggle('dark-theme');
 });
+
+/* преобразование даты */
+
+function formatDate(inputDate) {
+  // Разделение даты на день, месяц и год
+  var parts = inputDate.split('.');
+  var day = parseInt(parts[0]);
+  var month = parseInt(parts[1]);
+  var year = parseInt(parts[2]);
+
+  // Создание объекта даты
+  var dateObj = new Date(year, month - 1, day);
+
+  // Получение дня недели в виде числа (0 - Воскресенье, 1 - Понедельник, и так далее)
+  var weekday = dateObj.getDay();
+
+  // Массив с названиями дней недели
+  var weekdays = [
+    'Воскресенье',
+    'Понедельник',
+    'Вторник',
+    'Среда',
+    'Четверг',
+    'Пятница',
+    'Суббота',
+  ];
+
+  // Получение названия дня недели
+  var formattedWeekday = weekdays[weekday];
+
+  // Массив с названиями месяцев
+  var months = [
+    'Января',
+    'Февраля',
+    'Марта',
+    'Апреля',
+    'Мая',
+    'Июня',
+    'Июля',
+    'Августа',
+    'Сентября',
+    'Октября',
+    'Ноября',
+    'Декабря',
+  ];
+
+  // Получение названия месяца
+  var formattedMonth = months[month - 1];
+
+  // Получение порядкового номера недели в году
+  var weekNumber = Math.ceil((day + 6 - weekday) / 7);
+
+  // Форматирование строки с датой
+  var formattedDate =
+    formattedWeekday +
+    ', ' +
+    weekNumber +
+    ' неделя ' +
+    formattedMonth +
+    ' ' +
+    year +
+    ' года';
+
+  return formattedDate;
+}
+
+// Пример использования функции
+var inputDate = '01.01.2022';
+var formattedDate = formatDate('01.02.2023');
+console.log(formattedDate); // Выводит: "Суббота, 1 неделя Января 2022 года"
+
+const items = document.querySelectorAll('.category__item');
+
+items.forEach((item) => {
+  item.querySelector('.item__date').textContent = formatDate('01.02.2023');
+});
