@@ -13,3 +13,9 @@
 .header.dark-theme {
   background-color: black;
 }
+
+@media screen and (max-width: 500px) {
+  .header {
+    padding: 20px;
+  }
+}
