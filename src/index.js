@@ -1,11 +1,11 @@
-/* функционал кнопки прокрутки наверх страницы */
+/* ПРОКРУТКА НАВЕРХ СТРАНИЦЫ */
 
 const scrollButton = document.querySelector('.scroll-top-btn');
 
 window.onscroll = function () {
   scrollFunction();
 };
-
+// функция, определяющая видимость кнопки прокрутки
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     scrollButton.classList.add('show');
@@ -13,7 +13,7 @@ function scrollFunction() {
     scrollButton.classList.remove('show');
   }
 }
-
+// функция прокрутки наверх страницы
 function scrollToTop() {
   document.body.scrollTop = 0; // Для Safari
   document.documentElement.scrollTop = 0; // Для Chrome, Firefox, IE и Opera
@@ -23,7 +23,7 @@ scrollButton.addEventListener('click', () => {
   scrollToTop();
 });
 
-/* открытие формы при клике на кнопку покупки */
+/* ОТКРЫТИЕ ФОРМЫ ПРИ КЛИКЕ НА КНОПКУ "КУПИТЬ" */
 
 const buyButtons = document.querySelectorAll('.item__button');
 const popup = document.querySelector('.buy-form');
@@ -39,7 +39,7 @@ buyButtons.forEach((button) => {
   });
 });
 
-/* отправка формы */
+/* ОТПРАВКА ФОРМЫ */
 
 const buyForm = document.querySelector('.buy-form__form');
 
@@ -52,13 +52,14 @@ function formSubmitHandler(evt) {
 
 buyForm.addEventListener('submit', formSubmitHandler);
 
+/*  ЗАКРЫТИЕ ПОПАПА ПО НАЖАТИЮ НА КНОПКУ "ЗАКРЫТЬ" */
 const exitFormButton = document.querySelector('.buy-form__close-button');
 exitFormButton.addEventListener('click', () => {
   popup.classList.remove('open');
   buyForm.reset();
 });
 
-/* Переключение темы */
+/* ПЕРЕКЛЮЧЕНИЕ ТЕМЫ */
 
 const themeSwitch = document.querySelector('.header__theme-switch');
 const header = document.querySelector('.header');
@@ -66,7 +67,7 @@ const headerTexts = document.querySelectorAll('.header__nav-link');
 const body = document.querySelector('.body');
 const itemCard = document.querySelectorAll('.category__item');
 const formContainer = document.querySelector('.buy-form__container');
-
+// событие переключения при нажатии на кнопку в header
 themeSwitch.addEventListener('click', () => {
   header.classList.toggle('dark-theme');
   headerTexts.forEach((text) => {
@@ -79,7 +80,11 @@ themeSwitch.addEventListener('click', () => {
   formContainer.classList.toggle('dark-theme');
 });
 
-/* преобразование даты */
+/* 
+ПРЕОБРАЗОВАНИЕ ДАТЫ -
+сейчас дата используется одна, но при получении товаров в виде массива в функцию будут 
+передаваться и обрабатываться значения дат для каждого товара 
+*/
 
 function formatDate(inputDate) {
   // Разделение даты на день, месяц и год
@@ -144,11 +149,7 @@ function formatDate(inputDate) {
   return formattedDate;
 }
 
-// Пример использования функции
-var inputDate = '01.01.2022';
-var formattedDate = formatDate('01.02.2023');
-console.log(formattedDate); // Выводит: "Суббота, 1 неделя Января 2022 года"
-
+// отображение преобразованной даты в карточке товара
 const items = document.querySelectorAll('.category__item');
 
 items.forEach((item) => {
