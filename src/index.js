@@ -26,15 +26,34 @@ scrollButton.addEventListener('click', () => {
 /* открытие формы при клике на кнопку покупки */
 
 const buyButtons = document.querySelectorAll('.item__button');
-const buyForm = document.querySelector('.buy-form');
+const popup = document.querySelector('.buy-form');
 const itemFormName = document.querySelector('.buy-form__item-name');
 
 buyButtons.forEach((button) => {
   button.addEventListener('click', () => {
-    buyForm.classList.add('open');
+    popup.classList.add('open');
     const item = button.closest('.category__item');
     const itemName = item.querySelector('.item__name').textContent;
     itemFormName.textContent = itemName;
     console.log(itemName);
   });
+});
+
+/* отправка формы */
+
+const buyForm = document.querySelector('.buy-form__form');
+
+function formSubmitHandler(evt) {
+  evt.preventDefault();
+  popup.classList.remove('open');
+  buyForm.reset();
+  alert('Покупка совершена успешно!');
+}
+
+buyForm.addEventListener('submit', formSubmitHandler);
+
+const exitFormButton = document.querySelector('.buy-form__close-button');
+exitFormButton.addEventListener('click', () => {
+  popup.classList.remove('open');
+  buyForm.reset();
 });
