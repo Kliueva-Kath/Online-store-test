@@ -1,0 +1,16 @@
+.buy-form__close-button {
+  font-family: 'Inter', 'Arial', sans-serif;
+  font-size: 16px;
+  width: 150px;
+  height: 35px;
+  outline: none;
+  border: none;
+  background: crimson;
+  border-radius: 4px;
+  color: white;
+}
+
+.buy-form__close-button:hover {
+  cursor: pointer;
+  background: rgb(249, 17, 17);
+}

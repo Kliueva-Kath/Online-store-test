@@ -1,0 +1,4 @@
+.buy-form__input-wrapper {
+  display: flex;
+  flex-direction: column;
+}

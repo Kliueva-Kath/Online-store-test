@@ -1,0 +1,39 @@
+.buy-form__input_type_color {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  position: relative;
+  /*   display: block; */
+  appearance: none;
+}
+
+.buy-form__input_type_color::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #333;
+}
+
+.color_black.buy-form__input_type_color::before {
+  background-color: black;
+}
+
+.color_white.buy-form__input_type_color::before {
+  background-color: white;
+}
+
+.color_red.buy-form__input_type_color::before {
+  background: red;
+}
+
+.color_green.buy-form__input_type_color::before {
+  background-color: green;
+}
+
+.buy-form__input_type_color:checked {
+  outline: solid 3px blue;
+}

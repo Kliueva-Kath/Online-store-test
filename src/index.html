@@ -271,9 +271,79 @@
             </li>
           </ul>
         </section>
+        <div class="buy-form">
+          <div class="buy-form__container">
+            <h2 class="buy-form__header">Купить</h2>
+            <p class="buy-form__item">Название товара:</p>
+            <p class="buy-form__item-name">Вставить название!</p>
+            <form class="buy-form__form">
+              <div class="buy-form__input-wrapper">
+                <label class="buy-form__label" for="quantity"
+                  >Количество:</label
+                >
+                <input
+                  class="buy-form__input buy-form__input_type_number"
+                  id="quantity"
+                  name="quantity"
+                  type="number"
+                  min="1"
+                  required
+                />
+              </div>
+              <div class="buy-form__input-wrapper">
+                <label class="buy-form__label" for="color">Цвет:</label>
+                <div class="buy-form__colors-wrapper">
+                  <input
+                    class="buy-form__input buy-form__input_type_color color_black"
+                    id="color"
+                    name="color"
+                    type="radio"
+                  />
+                  <input
+                    class="buy-form__input buy-form__input_type_color color_white"
+                    id="color"
+                    name="color"
+                    type="radio"
+                  />
+                  <input
+                    class="buy-form__input buy-form__input_type_color color_red"
+                    id="color"
+                    name="color"
+                    type="radio"
+                  />
+                  <input
+                    class="buy-form__input buy-form__input_type_color color_green"
+                    id="color"
+                    name="color"
+                    type="radio"
+                  />
+                </div>
+              </div>
+              <div class="buy-form__input-wrapper">
+                <label class="buy-form__label" for="comment"
+                  >Комментарий:</label
+                >
+                <textarea
+                  class="buy-form__input buy-form__input_type_text"
+                  id="comment"
+                  name="comment"
+                  type="text"
+                  maxlength="2000"
+                ></textarea>
+              </div>
+              <div class="buy-form__buttons">
+                <button class="buy-form__submit-button">Купить</button>
+                <button class="buy-form__close-button">Закрыть</button>
+              </div>
+            </form>
+          </div>
+        </div>
         <button class="scroll-top-btn">&#129045;</button>
       </main>
     </div>
+    <footer class="footer">
+      <p class="footer__author">&copy; 2023. Екатерина Клюева</p>
+    </footer>
     <script src="index.js"></script>
   </body>
 </html>

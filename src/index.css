@@ -41,3 +41,26 @@
 @import url('./blocks/item/__name/item__name.css');
 
 @import url('./blocks/scroll-top-btn/scroll-top-btn.css');
+
+/* footer */
+
+@import url('./blocks/footer/footer.css');
+@import url('./blocks/footer/__author/footer__author.css');
+
+/* форма покупки */
+
+@import url('./blocks/buy-form/buy-form.css');
+@import url('./blocks/buy-form/__buttons/buy-form__buttons.css');
+@import url('./blocks/buy-form/__close-button/buy-form__close-button.css');
+@import url('./blocks/buy-form/__container/buy-form__container.css');
+@import url('./blocks/buy-form/__form/buy-form__form.css');
+@import url('./blocks/buy-form/__header/buy-form__header.css');
+@import url('./blocks/buy-form/__input-wrapper/buy-form__input-wrapper.css');
+@import url('./blocks/buy-form/__input/buy-form__input.css');
+@import url('./blocks/buy-form/__input/_type/buy-form__input_type_color.css');
+@import url('./blocks/buy-form/__input/_type/buy-form__input_type_number.css');
+@import url('./blocks/buy-form/__input/_type/buy-form__input_type_text.css');
+@import url('./blocks/buy-form/__item/buy-form__item.css');
+@import url('./blocks/buy-form/__item-name/buy-form__item-name.css');
+@import url('./blocks/buy-form/__label/buy-form__label.css');
+@import url('./blocks/buy-form/__submit-button/buy-form__submit-button.css');

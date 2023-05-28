@@ -1,0 +1,6 @@
+.buy-form__buttons {
+  display: flex;
+  margin: 30px auto 0;
+  gap: 20px;
+  justify-content: center;
+}
